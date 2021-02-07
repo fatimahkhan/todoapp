@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+</head>
+<body>
+    <h1>this is the homepage </h1>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>itemname</th> 
+        
+          </tr>
+          {% for k,v in todos.items() %}  
+          
+         <tr> 
+             <td>{{k}} </td>
+
+             <td>{{v}}</td>
+
+
+         </tr>
+          {% endfor %} 
+    <!--<tr>
+            <td>1</td>
+            <td>do shopping</td>
+
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>homework</td>
+
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>tidy up</td>
+
+        </tr>   -->
+    </table>
+
+</body>
+</html>
